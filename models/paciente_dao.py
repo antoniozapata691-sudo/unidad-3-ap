@@ -1,5 +1,5 @@
 from sqlite3 import Cursor
-from config.database import Database
+from models.database import Database
 from models.paciente import Paciente
 from models.departamento_dao import DepartamentoDAO
 

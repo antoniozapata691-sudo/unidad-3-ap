@@ -1,4 +1,4 @@
-from config.database import Database
+from models.database import Database
 from controllers.main_controller import MainController
 
 def main() -> None:

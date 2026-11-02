@@ -1,5 +1,5 @@
 from sqlite3 import Cursor
-from config.database import Database
+from models.database import Database
 from models.departamento import Departamento
 
 class DepartamentoDAO:

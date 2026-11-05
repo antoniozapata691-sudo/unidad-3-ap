@@ -72,3 +72,14 @@ if __name__ == "__main__":
     db = Database()
     db.init_db()
     print("Base de datos inicializada correctamente.")
+
+    # Tabla Usuario (Semana 12: Inicio de sesión con credenciales encriptadas)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS usuario (
+            id_usuario INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT NOT NULL UNIQUE,
+            password_hash TEXT NOT NULL,
+            nombre_completo TEXT NOT NULL,
+            rol TEXT NOT NULL
+        )
+    """)

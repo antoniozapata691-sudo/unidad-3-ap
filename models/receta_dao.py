@@ -1,6 +1,6 @@
 import sqlite3
 from typing import List, Optional
-from models.database import Database
+from config.database import Database
 from models.receta import Receta
 
 class RecetaDAO:

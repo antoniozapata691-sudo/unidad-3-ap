@@ -8,7 +8,7 @@ except ImportError:
     requests = None
     REQUESTS_AVAILABLE = False
 
-from models.settings import Settings
+from config.settings import Settings
 from models.medicamento import Medicamento
 
 class MedicamentoService:
